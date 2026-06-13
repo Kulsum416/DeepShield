@@ -1,0 +1,34 @@
+DeepShield — Results Summary
+=============================
+
+IMAGE DETECTION RESULTS
+------------------------
+Midjourney (Unseen)     → 99.90%
+StyleGAN (Unseen)       → 97.30%
+Validation (Mixed)      → 93.50%
+CelebDF (Unseen)        → 81.50%  (+30pp over published methods)
+Real-World (Unseen)     → 48.50%
+
+VIDEO DETECTION RESULTS
+------------------------
+FF++ Overall            → 95.50%
+FF++ Real               → 100.0%
+FF++ Deepfakes          → 96.0%
+FF++ Face2Face          → 92.0%
+FF++ FaceSwap           → 88.0%
+FF++ NeuralTextures     → 88.0%
+DFD Overall (Unseen)    → 72.86%  (+21pp over published methods)
+
+ADVERSARIAL ROBUSTNESS
+------------------------
+Clean Accuracy          → 95.50%
+Under FGSM Attack       → 9.50%
+After RIP Defense       → 53.00%
+Recovery                → +74 percentage points
+
+MODEL COMPARISON
+------------------------
+EfficientNet-B0 (Ours)        → 4.01M params | 81.50% CelebDF | 15.59MB
+XceptionNet (Rossler 2019)    → 22M params   | 51.20% CelebDF | 88MB
+Multi-Attentional (Zhao 2021) → 30M+ params  | 52.00% CelebDF | 120MB+
+Vision Transformer (ViT)      → 86M params   | 85.00% CelebDF | 327MB

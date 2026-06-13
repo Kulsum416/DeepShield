@@ -1,0 +1,21 @@
+DeepShield Model Files
+======================
+Trained on Kaggle GPU (NVIDIA Tesla P100)
+
+Download model files from Google Drive and place them in:
+C:\Users\UMME\Downloads\
+
+Google Drive Link:
+https://drive.google.com/drive/folders/14nJ4eqoYe0wiNFGVF9woFRqdPJRDB9Ix?usp=sharing
+
+Models:
+- EfficientNet_final.pth        → Primary image model  | Accuracy: 93.50%
+- EfficientNet_video.pth        → Primary video model  | Accuracy: 95.50%
+- EfficientNet_adversarial.pth  → Adversarial defense  | Recovery: +74pp
+- EfficientNet_finetuned_v2.pth → Finetuned variant    | Accuracy: 87.72%
+
+Training Details:
+- Architecture : EfficientNet-B0 (4.01M parameters, 15.59MB)
+- Dataset      : 65,000 images + 1,400 videos across 5 benchmark datasets
+- Platform     : Kaggle GPU (NVIDIA Tesla P100)
+- Framework    : PyTorch 2.1.0 + Timm 0.9.16
